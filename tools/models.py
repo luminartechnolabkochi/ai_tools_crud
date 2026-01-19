@@ -26,5 +26,12 @@ class AiTool(models.Model):
     category=models.CharField(max_length=200,choices=CATEGORY_OPTIONS,default="chat")
 
     
+    #__str__ string representation of an object
+    
+    def __str__(self):
+
+        return self.name
+
+
 
 
