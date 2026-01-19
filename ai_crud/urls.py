@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from tools.views import AiToolListCreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("tools/",AiToolListCreateView.as_view()),
+    
 ]

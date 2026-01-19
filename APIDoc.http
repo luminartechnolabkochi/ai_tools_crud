@@ -17,8 +17,6 @@ Accept: application/json
 POST http://127.0.0.1:8000/tools/
 Content-Type: application/json
 
-
-
 {
     "name":"githubcopilot",
     "company":"micosoft/github",
