@@ -1,0 +1,28 @@
+#method url
+# Content-type:application/json
+#authorization
+# body
+
+# Schema [AiTool]
+# Fields[name,company,purpose,current_version,category]
+
+#api call for listing all AITools
+###
+GET http://127.0.0.1:8000/tools/
+Accept: application/json
+
+
+#api call for adding an ai tool
+###
+POST http://127.0.0.1:8000/tools/
+Content-Type: application/json
+
+
+
+{
+    "name":"githubcopilot",
+    "company":"micosoft/github",
+    "purpose":"code generation",
+    "current_version":"gpt-5",
+    "category":"coding assistant"
+}
